@@ -1,0 +1,71 @@
+/* App.css */
+*{box-sizing:border-box}
+html,body,#root{height:100%;margin:0;padding:0;font-family:Inter,Arial,sans-serif;background:#f6f8fb;color:#0f172a}
+.container{max-width:1200px;margin:20px auto;padding:12px}
+.app-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}
+.logo{font-weight:700;color:#0ea5e9;font-size:20px}
+.app-sub{color:#6b7280}
+
+/* grid */
+.product-grid{display:flex;gap:18px;align-items:flex-start}
+.product-details{flex:2}
+.product-list{flex:1;min-width:300px}
+
+/* cards */
+.card{background:#fff;border-radius:12px;padding:14px;box-shadow:0 6px 18px rgba(3,7,18,0.06)}
+.card.small{padding:10px}
+.breadcrumb{color:#6b7280;font-size:13px;margin-bottom:8px}
+.page-title{margin:6px 0 12px 0;color:#0f172a}
+
+/* hero image */
+.hero-img{width:140px;height:88px;object-fit:cover;border-radius:8px}
+
+/* two columns inside details */
+.two-cols{display:flex;gap:18px}
+.left-col{flex:2}
+.right-col{flex:1}
+
+/* sections */
+.section{margin-bottom:14px}
+.section h3,.section h4{margin:6px 0;color:#0f172a}
+.muted{color:#6b7280}
+.small{font-size:13px}
+
+/* alt rows */
+.alt-row{display:flex;align-items:center;gap:10px;padding:8px;border-radius:8px;margin-bottom:8px}
+.alt-thumb img{width:64px;height:64px;border-radius:6px;object-fit:cover}
+.alt-meta{flex:1}
+.alt-action .btn-outline{padding:6px 10px;border-radius:8px;border:1px solid #e6eef6;background:#fff}
+
+/* compare grid */
+.compare-grid{display:flex;gap:10px;flex-wrap:wrap}
+.compare-card{background:#f8fafc;border-radius:10px;padding:8px;width:120px;text-align:center}
+.compare-card img{width:90px;height:60px;object-fit:cover;border-radius:6px}
+.compare-title{font-size:14px;margin-top:6px}
+.price{margin-top:6px;font-weight:700;color:#0f172a}
+
+/* product list */
+.list{list-style:none;padding:0;margin:0}
+.product-card{padding:10px;border-radius:8px;margin-bottom:8px;background:#fff;border:1px solid #eef2f7;cursor:pointer}
+.product-card:hover{box-shadow:0 6px 18px rgba(3,7,18,0.04)}
+
+/* salt list & add */
+.salt-list ul{list-style:none;padding:0;margin:0}
+.salt-list li{padding:8px;border-radius:8px;background:#f8fafc;margin-bottom:8px}
+input{width:100%;padding:8px;margin-top:8px;border-radius:8px;border:1px solid #e6eef6}
+button{margin-top:8px;padding:8px 12px;border-radius:8px;background:#0ea5e9;color:#fff;border:none;cursor:pointer}
+
+/* FAQ */
+.faq details{background:#fff;padding:8px;border-radius:8px;margin-bottom:8px}
+.faq summary{cursor:pointer}
+
+/* reviews */
+.review{background:#fff;padding:10px;border-radius:8px;margin-bottom:8px}
+
+/* responsive */
+@media (max-width:900px){
+  .product-grid{flex-direction:column}
+  .two-cols{flex-direction:column}
+  .right-col{order:2}
+  .left-col{order:1}
+}
